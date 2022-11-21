@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" href="../css/bootstrap.css" />
+    <link rel="stylesheet" href="../css/icons/bootstrap-icons.css" />
+    <script src="../funciones.js"></script>
+  </head>
+  <body onload="get_array()">
+    <main class="container p-5">
+      <div class="d-flex justify-content-center align-items-center">
+        <p class="my-0 mx-2 fs-2 text-center font-monospace">Ejercicio 3:</p>
+        <button class="mx-2 btn btn-primary btn-sm" onclick="descripcion()">
+          Mostrar descripción
+        </button>
+        <dialog id="modal" class="col-6 rounded">
+          <div class="mb-3 d-flex justify-content-end">
+            <button class="btn btn-secondary btn-sm" onclick="cerrar()">
+              <b><i class="bi bi-x-lg"></i></b>
+            </button>
+          </div>
+          <p class="fs-5 font-monospace text-center">
+            <b>Ejercicio 3:</b> Realizar un programa que contenga las
+            diferencias entre los loops: <code>for</code>, <code>forEach</code>,
+            <code>for in</code> y <code>for of</code>. En el mismo código
+            explicar las diferencias, pros y contras, de cada uno de ellos.
+            Vídeo que sirve de apoyo:
+            <a
+              target="_blank"
+              href="https://www.youtube.com/watch?v=Xax0GUlSjpk"
+            >
+              Diferencias entre loops
+            </a>
+          </p>
+        </dialog>
+      </div>
+      <p class="m-3 fs-5 text-center font-monospace">
+        Diferencias entre loops recorriendo un array de 10 números aleatorios
+      </p>
+      <div class="d-flex justify-content-center align-items-center">
+        <p class="m-3 fs-5 text-center font-monospace">Array:</p>
+        <button class="mx-2 btn btn-primary btn-sm" onclick="ver_array()">
+          Mostrar Array
+        </button>
+        <dialog id="modal_array" class="col-8 rounded">
+          <div class="mb-3 d-flex justify-content-end">
+            <button class="btn btn-secondary btn-sm" onclick="cerrar_array()">
+              <b><i class="bi bi-x-lg"></i></b>
+            </button>
+          </div>
+          <p id="array" class="text-break fs-5 font-monospace text-center"></p>
+        </dialog>
+      </div>
+      <div class="font-monospace text-break">
+        <div id="for" class="m-3 p-2 bg-light rounded">
+          <span class="fs-5">for:</span><br />
+        </div>
+        <div id="foreach" class="m-3 p-2 bg-light rounded">
+          <span class="fs-5">forEach:</span><br />
+        </div>
+        <div id="forin" class="m-3 p-2 bg-light rounded">
+          <span class="fs-5">for in:</span><br />
+        </div>
+        <div id="forof" class="m-3 p-2 bg-light rounded">
+          <span class="fs-5">for of:</span><br />
+        </div>
+      </div>
+      <div class="mt-5 d-flex justify-content-center">
+        <button
+          id="boton_3"
+          class="mx-2 col-4 btn btn-primary"
+          onclick="accion_3()"
+          data-toggle="tooltip"
+          title="Tooltip on top"
+        >
+          Mostrar Diferencias
+        </button>
+        <a class="mx-2 btn btn-secondary" href="../index.html">Volver</a>
+      </div>
+    </main>
+    <script src="../js/bootstrap.bundle.js"></script>
+  </body>
+</html>
